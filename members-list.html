@@ -10,130 +10,499 @@
     <link rel="icon" href="img/Logo.ico"/>
 
     <link rel="stylesheet" href="libs/css/bootstrap.min.css">
-    <link rel="stylesheet" href="libs/css/mdb.min.css">
+    <!--    <link rel="stylesheet" href="libs/css/mdb.min.css">-->
 
 
     <link rel="stylesheet" href="libs/css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="libs/css/all.css">
     <link rel="stylesheet" href="libs/css/daterangepicker.css">
     <link rel="stylesheet" href="sass/main.css">
 
-    <script type="text/javascript" src="libs/js/jquery.min.js"></script>
-    <script type="text/javascript" src="libs/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="libs/js/mdb.min.js"></script>
-
-    <script type="text/javascript" src="libs/js/jquery.datetimepicker.full.min.js"></script>
-    <script type="text/javascript" src="libs/js/moment.min.js"></script>
-    <script type="text/javascript" src="libs/js/script.js"></script>
 
 </head>
 <body>
-    <div id="wrapper">
-        <header>
+<div id="wrapper" class="clearfix">
+    <header>
+        <div class="head-top">
             <div class="logo">
                 <img src="img/Logo.svg" alt="img">
                 <div class="txt-logo">Vietnam Securities<br>Depository</div>
             </div>
+            <!-- end logo-->
+
+            <!-- anh code xét trang giúp em ví dụ đang ở trang nào thì thêm class  rotate-down active  vào li bên ngoài còn li bên trong thi them class active-->
+
             <div class="navigation">
                 <nav>
                     <ul class="menu-parent">
                         <li>
                             <a href="#">
                                 <img class="icon-dark" src="img/icon-home.svg" alt="img">
-                                <img class="icon-light" src="img/icon-home.svg" alt="img">
+                                <img class="icon-light" src="img/icon-home-light.svg" alt="img">
                                 Trang chủ
                             </a>
                         </li>
-                        <li>
+                        <li class="has-dropdown">
                             <a href="#">
-                                <img class="icon-dark" src="img/icon-home.svg" alt="img">
-                                <img class="icon-light" src="img/icon-home.svg" alt="img">
+                                <img class="icon-dark" src="img/icon-uti.svg" alt="img">
+                                <img class="icon-light" src="img/icon-uti-light.svg" alt="img">
                                 Tiện ích
                                 <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
                                 <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
                             </a>
                         </li>
-                        <li>
+                        <li class="has-dropdown rotate-down active">
                             <a href="#">
-                                <img class="icon-dark" src="img/icon-home.svg" alt="img">
-                                <img class="icon-light" src="img/icon-home.svg" alt="img">
+                                <img class="icon-dark" src="img/icon-member.svg" alt="img">
+                                <img class="icon-light" src="img/icon-member-light.svg" alt="img">
                                 Thành viên
                                 <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
                                 <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
                             </a>
+                            <ul class="menuchild">
+                                <li class="active">
+                                    <a href="#">
+                                        <img class="liststyle" src="img/icon-liststyle.svg" alt="img">
+                                        <img class="liststyle-light" src="img/icon-liststyle-light.svg" alt="img">
+                                        Danh sách thành viên
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="liststyle" src="img/icon-liststyle.svg" alt="img">
+                                        <img class="liststyle-light" src="img/icon-liststyle-light.svg" alt="img">
+                                        Danh sách chi nhánh
+                                        HĐLK
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="liststyle" src="img/icon-liststyle.svg" alt="img">
+                                        <img class="liststyle-light" src="img/icon-liststyle-light.svg" alt="img">
+                                        Danh mục nhóm chi nhánh
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="liststyle" src="img/icon-liststyle.svg" alt="img">
+                                        <img class="liststyle-light" src="img/icon-liststyle-light.svg" alt="img">
+                                        Danh mục nghiệp vụ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="liststyle" src="img/icon-liststyle.svg" alt="img">
+                                        <img class="liststyle-light" src="img/icon-liststyle-light.svg" alt="img">
+                                        Danh sách chờ duyệt
+                                    </a>
+                                </li>
+
+                            </ul>
                         </li>
-                        <li>
+                        <li class="has-dropdown">
                             <a href="#">
-                                <img class="icon-dark" src="img/icon-home.svg" alt="img">
-                                <img class="icon-light" src="img/icon-home.svg" alt="img">
+                                <img class="icon-dark" src="img/icon-acount.svg" alt="img">
+                                <img class="icon-light" src="img/icon-acount-light.svg" alt="img">
                                 Tài khoản
                                 <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
                                 <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
                             </a>
                         </li>
-                        <li>
+                        <li class="has-dropdown">
                             <a href="#">
-                                <img class="icon-dark" src="img/icon-home.svg" alt="img">
-                                <img class="icon-light" src="img/icon-home.svg" alt="img">
+                                <img class="icon-dark" src="img/icon-calenda.svg" alt="img">
+                                <img class="icon-light" src="img/icon-calenda-light.svg" alt="img">
                                 Lịch hoạt động
                                 <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
                                 <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
                             </a>
                         </li>
-                        <li>
+                        <li class="has-dropdown">
                             <a href="#">
-                                <img class="icon-dark" src="img/icon-home.svg" alt="img">
-                                <img class="icon-light" src="img/icon-home.svg" alt="img">
+                                <img class="icon-dark" src="img/icon-juridical.svg" alt="img">
+                                <img class="icon-light" src="img/icon-juridical-light.svg" alt="img">
                                 Pháp lý
                                 <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
                                 <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
                             </a>
                         </li>
-                        <li>
+                        <li class="has-dropdown">
                             <a href="#">
-                                <img class="icon-dark" src="img/icon-home.svg" alt="img">
-                                <img class="icon-light" src="img/icon-home.svg" alt="img">
+                                <img class="icon-dark" src="img/icon-manager-cate.svg" alt="img">
+                                <img class="icon-light" src="img/icon-manager-cate-light.svg" alt="img">
                                 Quản lý bài viết
                                 <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
                                 <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
                             </a>
                         </li>
-                        <li>
+                        <li class="has-dropdown">
                             <a href="#">
-                                <img class="icon-dark" src="img/icon-home.svg" alt="img">
-                                <img class="icon-light" src="img/icon-home.svg" alt="img">
+                                <img class="icon-dark" src="img/icon-organization.svg" alt="img">
+                                <img class="icon-light" src="img/icon-organization-light.svg" alt="img">
                                 Tổ chức phát hành
                                 <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
                                 <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
                             </a>
                         </li>
-                        <li>
+                        <li class="has-dropdown">
                             <a href="#">
-                                <img class="icon-dark" src="img/icon-home.svg" alt="img">
-                                <img class="icon-light" src="img/icon-home.svg" alt="img">
+                                <img class="icon-dark" src="img/icon-stock.svg" alt="img">
+                                <img class="icon-light" src="img/icon-stock-light.svg" alt="img">
                                 Chứng khoán phái sinh
                                 <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
                                 <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
                             </a>
                         </li>
-                        <li>
+                        <li class="has-dropdown">
                             <a href="#">
-                                <img class="icon-dark" src="img/icon-home.svg" alt="img">
-                                <img class="icon-light" src="img/icon-home.svg" alt="img">
+                                <img class="icon-dark" src="img/icon-question.svg" alt="img">
+                                <img class="icon-light" src="img/icon-question-light.svg" alt="img">
                                 Hỏi đáp
                                 <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
                                 <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
                             </a>
                         </li>
-
-
+                        <li class="">
+                            <button class="btn-expand-narrow">
+                                <i class="fas fa-angle-left"></i>
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </li>
 
                     </ul>
                 </nav>
             </div>
-        </header>
-        <main>
+        </div>
 
-        </main>
-    </div>
+        <!--end head top-->
+
+        <div class="block-account">
+            <a href="#" class="name-user"><img src="img/icon-user.svg" alt="img"><span>Thaonp</span></a>
+            <a href="#"><img src="img/icon-noty.svg" alt="img"></a>
+        </div>
+    </header>
+
+    <!--end header-->
+
+    <main>
+        <div class="container">
+            <div class="title-page">
+                <h3 class="name-page">Danh Sách Thành Viên</h3>
+                <div class="breadcrumb-block">
+                    <a href="#">Trang chủ</a><span> / </span>
+                    <a href="#">Thành viên</a><span> / </span>
+                    <a href="#">Danh sách thành viên</a>
+                </div>
+            </div>
+            <div class="block-data">
+                <div class="box-search">
+                    <div class="item-search">
+                        <select class="select-field">
+                            <option value="" selected>Loại thành viên</option>
+                            <option value="">Loại thành viên 1</option>
+                            <option value="">Loại thành viên 2</option>
+                            <option value="">Loại thành viên 3</option>
+                        </select>
+                        <img class="angledown" src="img/icon-angle-select.svg" alt="img">
+                    </div>
+                    <div class="item-search">
+                        <select class="select-field">
+                            <option value="" selected>Trạng thái</option>
+                            <option value="">Trạng thái 1</option>
+                            <option value="">Trạng thái 2</option>
+                            <option value="">Trạng thái 3</option>
+                        </select>
+                        <img class="angledown" src="img/icon-angle-select.svg" alt="img">
+                    </div>
+                    <div class="item-search">
+                        <input class="text-null" type="text" placeholder="Tên thành viên hoặc tổ chức">
+                        <button class="icon-close-ip"><img src="img/icon-close-ip.svg" alt="img"></button>
+                    </div>
+                    <button class="btn-add"><img src="img/icon-add.svg" alt="img"></button>
+                    <button class="btn-search"><img src="img/icon-search.svg" alt="img"></button>
+                </div>
+                <div class="tbl-data">
+                    <div class="wrapper-editor">
+                        <table class="table" cellspacing="0" width="100%">
+                            <thead>
+                            <tr>
+                                <th class="mw-40">STT</th>
+                                <th class="mw-200">Tên thành viên</th>
+                                <th class="mw-100">Tên viết tắt</th>
+                                <th class="mw-130">Mã thành viên</th>
+                                <th class="mw-150">Loại thành viên</th>
+                                <th class="mw-130">Trạng thái</th>
+                                <th class="mw-130">Chức năng</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Ngân hàng trách nhiệm hữu hạn một thành viên Shinhan Việt nam</td>
+                                <td class="text-center">SHV</td>
+                                <td class="text-center">407</td>
+                                <td class="text-center">Thành viên lưu ký</td>
+                                <td class="text-center">Bình thường</td>
+                                <td class="text-center">
+                                    <a class="btn-function" href="#" title="Chi tiết"><img src="img/icon-detail.svg"
+                                                                                           alt="img"></a>
+                                    <a class="btn-function" href="#" title="Sửa"><img src="img/icon-edit.svg" alt="img"></a>
+                                    <a class="btn-function" href="#" title="Xóa"><img src="img/icon-delete.svg"
+                                                                                      alt="img"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Ngân hàng trách nhiệm hữu hạn một thành viên Shinhan Việt nam</td>
+                                <td class="text-center">SHV</td>
+                                <td class="text-center">407</td>
+                                <td class="text-center">Thành viên lưu ký</td>
+                                <td class="text-center">Bình thường</td>
+                                <td class="text-center">
+                                    <a class="btn-function" href="#" title="Chi tiết"><img src="img/icon-detail.svg"
+                                                                                           alt="img"></a>
+                                    <a class="btn-function" href="#" title="Sửa"><img src="img/icon-edit.svg" alt="img"></a>
+                                    <a class="btn-function" href="#" title="Xóa"><img src="img/icon-delete.svg"
+                                                                                      alt="img"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Ngân hàng trách nhiệm hữu hạn một thành viên Shinhan Việt nam</td>
+                                <td class="text-center">SHV</td>
+                                <td class="text-center">407</td>
+                                <td class="text-center">Thành viên lưu ký</td>
+                                <td class="text-center">Bình thường</td>
+                                <td class="text-center">
+                                    <a class="btn-function" href="#" title="Chi tiết"><img src="img/icon-detail.svg"
+                                                                                           alt="img"></a>
+                                    <a class="btn-function" href="#" title="Sửa"><img src="img/icon-edit.svg" alt="img"></a>
+                                    <a class="btn-function" href="#" title="Xóa"><img src="img/icon-delete.svg"
+                                                                                      alt="img"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Ngân hàng trách nhiệm hữu hạn một thành viên Shinhan Việt nam</td>
+                                <td class="text-center">SHV</td>
+                                <td class="text-center">407</td>
+                                <td class="text-center">Thành viên lưu ký</td>
+                                <td class="text-center">Bình thường</td>
+                                <td class="text-center">
+                                    <a class="btn-function" href="#" title="Chi tiết"><img src="img/icon-detail.svg"
+                                                                                           alt="img"></a>
+                                    <a class="btn-function" href="#" title="Sửa"><img src="img/icon-edit.svg" alt="img"></a>
+                                    <a class="btn-function" href="#" title="Xóa"><img src="img/icon-delete.svg"
+                                                                                      alt="img"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Ngân hàng trách nhiệm hữu hạn một thành viên Shinhan Việt nam</td>
+                                <td class="text-center">SHV</td>
+                                <td class="text-center">407</td>
+                                <td class="text-center">Thành viên lưu ký</td>
+                                <td class="text-center">Bình thường</td>
+                                <td class="text-center">
+                                    <a class="btn-function" href="#" title="Chi tiết"><img src="img/icon-detail.svg"
+                                                                                           alt="img"></a>
+                                    <a class="btn-function" href="#" title="Sửa"><img src="img/icon-edit.svg" alt="img"></a>
+                                    <a class="btn-function" href="#" title="Xóa"><img src="img/icon-delete.svg"
+                                                                                      alt="img"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Ngân hàng trách nhiệm hữu hạn một thành viên Shinhan Việt nam</td>
+                                <td class="text-center">SHV</td>
+                                <td class="text-center">407</td>
+                                <td class="text-center">Thành viên lưu ký</td>
+                                <td class="text-center">Bình thường</td>
+                                <td class="text-center">
+                                    <a class="btn-function" href="#" title="Chi tiết"><img src="img/icon-detail.svg"
+                                                                                           alt="img"></a>
+                                    <a class="btn-function" href="#" title="Sửa"><img src="img/icon-edit.svg" alt="img"></a>
+                                    <a class="btn-function" href="#" title="Xóa"><img src="img/icon-delete.svg"
+                                                                                      alt="img"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Ngân hàng trách nhiệm hữu hạn một thành viên Shinhan Việt nam</td>
+                                <td class="text-center">SHV</td>
+                                <td class="text-center">407</td>
+                                <td class="text-center">Thành viên lưu ký</td>
+                                <td class="text-center">Bình thường</td>
+                                <td class="text-center">
+                                    <a class="btn-function" href="#" title="Chi tiết"><img src="img/icon-detail.svg"
+                                                                                           alt="img"></a>
+                                    <a class="btn-function" href="#" title="Sửa"><img src="img/icon-edit.svg" alt="img"></a>
+                                    <a class="btn-function" href="#" title="Xóa"><img src="img/icon-delete.svg"
+                                                                                      alt="img"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Ngân hàng trách nhiệm hữu hạn một thành viên Shinhan Việt nam</td>
+                                <td class="text-center">SHV</td>
+                                <td class="text-center">407</td>
+                                <td class="text-center">Thành viên lưu ký</td>
+                                <td class="text-center">Bình thường</td>
+                                <td class="text-center">
+                                    <a class="btn-function" href="#" title="Chi tiết"><img src="img/icon-detail.svg"
+                                                                                           alt="img"></a>
+                                    <a class="btn-function" href="#" title="Sửa"><img src="img/icon-edit.svg" alt="img"></a>
+                                    <a class="btn-function" href="#" title="Xóa"><img src="img/icon-delete.svg"
+                                                                                      alt="img"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Ngân hàng trách nhiệm hữu hạn một thành viên Shinhan Việt nam</td>
+                                <td class="text-center">SHV</td>
+                                <td class="text-center">407</td>
+                                <td class="text-center">Thành viên lưu ký</td>
+                                <td class="text-center">Bình thường</td>
+                                <td class="text-center">
+                                    <a class="btn-function" href="#" title="Chi tiết"><img src="img/icon-detail.svg"
+                                                                                           alt="img"></a>
+                                    <a class="btn-function" href="#" title="Sửa"><img src="img/icon-edit.svg" alt="img"></a>
+                                    <a class="btn-function" href="#" title="Xóa"><img src="img/icon-delete.svg"
+                                                                                      alt="img"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Ngân hàng trách nhiệm hữu hạn một thành viên Shinhan Việt nam</td>
+                                <td class="text-center">SHV</td>
+                                <td class="text-center">407</td>
+                                <td class="text-center">Thành viên lưu ký</td>
+                                <td class="text-center">Bình thường</td>
+                                <td class="text-center">
+                                    <a class="btn-function" href="#" title="Chi tiết"><img src="img/icon-detail.svg"
+                                                                                           alt="img"></a>
+                                    <a class="btn-function" href="#" title="Sửa"><img src="img/icon-edit.svg" alt="img"></a>
+                                    <a class="btn-function" href="#" title="Xóa"><img src="img/icon-delete.svg"
+                                                                                      alt="img"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Ngân hàng trách nhiệm hữu hạn một thành viên Shinhan Việt nam</td>
+                                <td class="text-center">SHV</td>
+                                <td class="text-center">407</td>
+                                <td class="text-center">Thành viên lưu ký</td>
+                                <td class="text-center">Bình thường</td>
+                                <td class="text-center">
+                                    <a class="btn-function" href="#" title="Chi tiết"><img src="img/icon-detail.svg"
+                                                                                           alt="img"></a>
+                                    <a class="btn-function" href="#" title="Sửa"><img src="img/icon-edit.svg" alt="img"></a>
+                                    <a class="btn-function" href="#" title="Xóa"><img src="img/icon-delete.svg"
+                                                                                      alt="img"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Ngân hàng trách nhiệm hữu hạn một thành viên Shinhan Việt nam</td>
+                                <td class="text-center">SHV</td>
+                                <td class="text-center">407</td>
+                                <td class="text-center">Thành viên lưu ký</td>
+                                <td class="text-center">Bình thường</td>
+                                <td class="text-center">
+                                    <a class="btn-function" href="#" title="Chi tiết"><img src="img/icon-detail.svg"
+                                                                                           alt="img"></a>
+                                    <a class="btn-function" href="#" title="Sửa"><img src="img/icon-edit.svg" alt="img"></a>
+                                    <a class="btn-function" href="#" title="Xóa"><img src="img/icon-delete.svg"
+                                                                                      alt="img"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Ngân hàng trách nhiệm hữu hạn một thành viên Shinhan Việt nam</td>
+                                <td class="text-center">SHV</td>
+                                <td class="text-center">407</td>
+                                <td class="text-center">Thành viên lưu ký</td>
+                                <td class="text-center">Bình thường</td>
+                                <td class="text-center">
+                                    <a class="btn-function" href="#" title="Chi tiết"><img src="img/icon-detail.svg"
+                                                                                           alt="img"></a>
+                                    <a class="btn-function" href="#" title="Sửa"><img src="img/icon-edit.svg" alt="img"></a>
+                                    <a class="btn-function" href="#" title="Xóa"><img src="img/icon-delete.svg"
+                                                                                      alt="img"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Ngân hàng trách nhiệm hữu hạn một thành viên Shinhan Việt nam</td>
+                                <td class="text-center">SHV</td>
+                                <td class="text-center">407</td>
+                                <td class="text-center">Thành viên lưu ký</td>
+                                <td class="text-center">Bình thường</td>
+                                <td class="text-center">
+                                    <a class="btn-function" href="#" title="Chi tiết"><img src="img/icon-detail.svg"
+                                                                                           alt="img"></a>
+                                    <a class="btn-function" href="#" title="Sửa"><img src="img/icon-edit.svg" alt="img"></a>
+                                    <a class="btn-function" href="#" title="Xóa"><img src="img/icon-delete.svg"
+                                                                                      alt="img"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Ngân hàng trách nhiệm hữu hạn một thành viên Shinhan Việt nam</td>
+                                <td class="text-center">SHV</td>
+                                <td class="text-center">407</td>
+                                <td class="text-center">Thành viên lưu ký</td>
+                                <td class="text-center">Bình thường</td>
+                                <td class="text-center">
+                                    <a class="btn-function" href="#" title="Chi tiết"><img src="img/icon-detail.svg"
+                                                                                           alt="img"></a>
+                                    <a class="btn-function" href="#" title="Sửa"><img src="img/icon-edit.svg" alt="img"></a>
+                                    <a class="btn-function" href="#" title="Xóa"><img src="img/icon-delete.svg"
+                                                                                      alt="img"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Ngân hàng trách nhiệm hữu hạn một thành viên Shinhan Việt nam</td>
+                                <td class="text-center">SHV</td>
+                                <td class="text-center">407</td>
+                                <td class="text-center">Thành viên lưu ký</td>
+                                <td class="text-center">Bình thường</td>
+                                <td class="text-center">
+                                    <a class="btn-function" href="#" title="Chi tiết"><img src="img/icon-detail.svg"
+                                                                                           alt="img"></a>
+                                    <a class="btn-function" href="#" title="Sửa"><img src="img/icon-edit.svg" alt="img"></a>
+                                    <a class="btn-function" href="#" title="Xóa"><img src="img/icon-delete.svg"
+                                                                                      alt="img"></a>
+                                </td>
+                            </tr>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+</div>
+<a href="#" id="back-to-top"><i class="fas fa-angle-up"></i></a>
+
+<script type="text/javascript" src="libs/js/jquery.min.js"></script>
+<!--    <script type="text/javascript" src="libs/js/popper.min.js"></script>-->
+
+<script type="text/javascript" src="libs/js/bootstrap.min.js"></script>
+<!--    <script type="text/javascript" src="libs/js/mdb.min.js"></script>-->
+
+<script type="text/javascript" src="libs/js/jquery.datetimepicker.full.min.js"></script>
+<script type="text/javascript" src="libs/js/moment.min.js"></script>
+<script type="text/javascript" src="libs/js/script.js"></script>
+<!--    <script>-->
+<!--        $(document).ready(function() {-->
+<!--            $('.mdb-select').materialSelect();-->
+<!--        });-->
+<!--    </script>-->
 </body>
 </html>

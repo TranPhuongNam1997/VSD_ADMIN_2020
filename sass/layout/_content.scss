@@ -2,3 +2,120 @@
 // Layout :: Content
 // ======================================================
 
+.title-page{
+  .name-page{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #255888;
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
+  .breadcrumb-block{
+    a{
+      color: #B6B6B6;
+      &:last-child{
+        color: #255888;
+      }
+    }
+    span{
+      color: #B6B6B6;
+    }
+  }
+
+  margin-bottom: 20px;
+}
+main{
+  width: calc(100% - 220px);
+  padding-bottom: 50px;
+  float: right;
+}
+.block-data{
+  background: #fff;
+  border-radius: 5px;
+}
+.box-search{
+  padding: 20px 20px;
+}
+
+.wrapper-editor{
+  table{
+    color: #303030;
+    margin-bottom: 0;
+    thead{
+      tr{
+        background: #255888;
+        th{
+          padding: 8px 16px;
+          color: #fff;
+          text-align: center;
+          border: none;
+          font-weight: 500;
+        }
+      }
+    }
+    tbody{
+      tr{
+        border-bottom: 1px solid #C4C4C4;
+        &:hover{
+          background: #F6F8FA;
+        }
+        td{
+          padding: 10px 16px;
+          border: none;
+          vertical-align: middle;
+        }
+      }
+    }
+    .btn-function{
+      margin-right: 16px;
+      display: inline-block;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.item-search{
+  display: inline-block;
+  position: relative;
+  margin-right: 6px;
+  width: 300px;
+  margin-bottom: 12px;
+  select,input{
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 10px 30px 10px 10px;
+    border: none;
+    -moz-appearance: none;
+    -webkit-appearance:none;
+    appearance: none;
+  }
+  select{
+    cursor: pointer;
+  }
+  .angledown{
+    position: absolute;
+    top: 16px;
+    right: 13px;
+    transition: all 0.2s;
+    z-index: 1;
+    &.active{
+      transform: rotate(180deg);
+      transition: all 0.2s;
+    }
+  }
+  .icon-close-ip{
+    position: absolute;
+    top: 12px;
+    right: 7px;
+    border: none;
+    background: transparent;
+    line-height: 0;
+    outline: none;
+  }
+}
+

@@ -1,3 +1,225 @@
 // ======================================================
 // Layout :: Navigation
 // ======================================================
+
+.menu-parent{
+  >li{
+    position: relative;
+
+    >a{
+      display: flex;
+      align-items: center;
+      position: relative;
+      color: $c-gr;
+      padding: 6px 25px 6px 18px;
+      transition: all 0.3s;
+      &:after{
+        display: none;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background: #75BCFF;
+        border-radius: 0.75px;
+        transition: all 0.3s;
+      }
+      img{
+        vertical-align: middle;
+      }
+      .icon-dark{
+        display: inline-block;
+        margin-right: 6px;
+      }
+      .icon-light{
+        display: none;
+        margin-right: 6px;
+      }
+      .angle-dark{
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        display: block;
+        transition: all 0.3s;
+      }
+      .angle-light{
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        display: none;
+        transition: all 0.3s;
+      }
+    }
+    &:hover{
+      >a{
+        background: rgba(97, 163, 224, 0.5);
+        color: #fff;
+        transition: all 0.3s;
+        .icon-dark{
+          display: none;
+        }
+        .icon-light{
+          display: inline-block;
+        }
+        .angle-dark{
+          display: none;
+        }
+        .angle-light{
+          display: block;
+        }
+        &:after{
+          display: block;
+        }
+      }
+    }
+    &.has-dropdown.active{
+      >a{
+        &:after{
+          display: block;
+        }
+      }
+    }
+    &.has-dropdown.rotate-down{
+      >a{
+        &:after{
+          display: block;
+        }
+        .angle-dark,.angle-light{
+          transform: rotate(180deg);
+          transition: all 0.3s;
+        }
+      }
+    }
+
+    &.has-dropdown.active{
+      >a{
+        background: rgba(97, 163, 224, 0.5);
+        color: #fff;
+        transition: all 0.3s;
+        .icon-dark{
+          display: none;
+        }
+        .icon-light{
+          display: inline-block;
+        }
+        .angle-dark{
+          display: none;
+        }
+        .angle-light{
+          display: block;
+        }
+      }
+      &.rotate-down{
+        >a{
+          .angle-light{
+            transform: rotate(180deg);
+            transition: all 0.3s;
+          }
+        }
+      }
+      .menuchild{
+        >li.active{
+          >a{
+            color: #fff;
+            transition: all 0.3s;
+            .liststyle{
+              display: none;
+            }
+            .liststyle-light{
+              display: inline-block;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+.block-account{
+  margin-bottom: 35px;
+  padding: 0 18px;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .name-user{
+    display: flex;
+    align-items: center;
+    &:hover{
+      span{
+        text-decoration: underline;
+      }
+    }
+    img{
+      margin-right: 6px;
+    }
+    span{
+      color: #fff;
+    }
+  }
+}
+.menuchild{
+  display: block;
+  width: 100%;
+  background: #173958;
+
+  >li{
+    >a{
+      display: block;
+      padding: 6px 10px 6px 39px;
+      position: relative;
+      color: #8B9CAB;
+      transition: all 0.3s;
+      .liststyle{
+        display: inline-block;
+        margin-right: 6px;
+        position: absolute;
+        top: 10px;
+        left: 24px;
+      }
+      .liststyle-light{
+        display: none;
+        margin-right: 6px;
+        position: absolute;
+        top: 10px;
+        left: 24px;
+      }
+    }
+    &:hover{
+      >a{
+        color: #fff;
+        transition: all 0.3s;
+        .liststyle{
+          display: none;
+        }
+        .liststyle-light{
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+.btn-expand-narrow{
+  background: #4D7EB3;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  margin: 6px 0;
+  width: 40px;
+  outline: none;
+  margin-left: 18px;
+  &:focus{
+    outline: none;
+
+  }
+  i{
+    color: #c7d3e2;
+  }
+  i.fas.fa-angle-left{
+    display: block;
+  }
+  i.fas.fa-angle-right{
+    display: none;
+  }
+}

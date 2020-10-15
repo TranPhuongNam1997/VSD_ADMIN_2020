@@ -2,3 +2,58 @@
 // Layout :: Header
 // ======================================================
 
+.logo{
+  display: flex;
+  align-items: center;
+  padding: 4px 10px;
+  margin-bottom: 30px;
+  img{
+    margin-right: 3px;
+  }
+  .txt-logo{
+    color: #fff;
+  }
+
+}
+header{
+  position: fixed;
+  //width: 204px;
+  width: 220px;
+  background: #255888;
+  left: 0;
+  top: 0;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* width */
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+  }
+
+
+  &.active{
+
+  }
+
+}
+
