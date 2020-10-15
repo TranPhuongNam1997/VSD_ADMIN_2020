@@ -1,0 +1,58 @@
+// ======================================================
+// Components :: Button
+// ======================================================
+
+
+//css input
+.btn-general input[type="checkbox"] {
+  position: relative;
+  border: none;
+  margin-bottom: -4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  margin-top: -5px;
+}
+
+.btn-general input[type="checkbox"]:checked:before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #164989;
+}
+
+.btn-general input[type="checkbox"]:checked:after {
+  border-color: #4F80FF;
+  //animation: scalebr 1s forwards;
+}
+.btn-general input[type="checkbox"]:after{
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid $c-bl;
+  -webkit-transition: 240ms;
+  transition: 240ms;
+  background: #fff;
+
+  //position: relative;
+  //z-index: 999;
+}
+.btn-general:after{
+  //content: '';
+  width: 14px;
+  height: 14px;
+  background: #5192e4;
+  position: absolute;
+  top: 7px;
+  left: 11px;
+
+}
+

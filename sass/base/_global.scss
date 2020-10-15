@@ -1,0 +1,81 @@
+// ======================================================
+// Base :: Global
+// ======================================================
+
+*,*:before,*:after{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: #E5E5E5;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Helvetica Neue';
+}
+input:focus,textarea:focus{
+  //outline: none;
+  //box-shadow: 0 0 4px 1px #164989;
+}
+.clearfix-9{
+  height: 9px;
+  clear: both;
+}
+.clearfix-20{
+  height: 20px;
+  clear: both;
+}
+
+.clr-red{
+  color: #ED1111;
+}
+.dp-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.datepicker-vsd{
+  background: #fff url(../img/icon-cacular.svg) no-repeat;
+  background-position: center right 12px;
+  cursor: pointer;
+}
+
+
+//css pagination
+#d_page{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  #d_total_rec{
+    color: #A3A3A3;
+  }
+  #d_number_of_page{
+    li{
+      display: inline-block;
+      cursor: pointer;
+      margin-left: 4px;
+      span{
+        width: 23px;
+        height: 23px;
+        text-align: center;
+        line-height: 23px;
+        border-radius: 50%;
+        display: inline-block;
+        color: #A3A3A3;
+        &.a-active{
+          background: $c-bl;
+          color: $c-wh;
+        }
+      }
+
+
+      &:hover span{
+        background: $c-bl;
+        color: $c-wh;
+      }
+    }
+  }
+}
