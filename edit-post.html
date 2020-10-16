@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VSD ADMIN</title>
+
+    <link rel="icon" href="img/Logo.ico"/>
+
+    <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+    <!--    <link rel="stylesheet" href="libs/css/mdb.min.css">-->
+
+
+    <link rel="stylesheet" href="libs/css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="libs/css/all.css">
+    <link rel="stylesheet" href="libs/css/daterangepicker.css">
+    <link rel="stylesheet" href="sass/main.css">
+
+
+</head>
+<body>
+<div id="wrapper" class="clearfix">
+    <header>
+        <div class="head-top">
+            <div class="logo">
+                <img src="img/Logo.svg" alt="img">
+                <div class="txt-logo">Vietnam Securities<br>Depository</div>
+            </div>
+            <!-- end logo-->
+
+            <!-- anh code xét trang giúp em ví dụ đang ở trang nào thì thêm class  rotate-down active  vào li bên ngoài còn li bên trong thi them class active-->
+
+            <div class="navigation">
+                <nav>
+                    <ul class="menu-parent">
+                        <li>
+                            <a href="#">
+                                <img class="icon-dark" src="img/icon-home.svg" alt="img">
+                                <img class="icon-light" src="img/icon-home-light.svg" alt="img">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">
+                                <img class="icon-dark" src="img/icon-uti.svg" alt="img">
+                                <img class="icon-light" src="img/icon-uti-light.svg" alt="img">
+                                Tiện ích
+                                <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
+                                <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
+                            </a>
+                        </li>
+                        <li class="has-dropdown rotate-down active">
+                            <a href="#">
+                                <img class="icon-dark" src="img/icon-member.svg" alt="img">
+                                <img class="icon-light" src="img/icon-member-light.svg" alt="img">
+                                Thành viên
+                                <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
+                                <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
+                            </a>
+                            <ul class="menuchild">
+                                <li class="active">
+                                    <a href="#">
+                                        <img class="liststyle" src="img/icon-liststyle.svg" alt="img">
+                                        <img class="liststyle-light" src="img/icon-liststyle-light.svg" alt="img">
+                                        Danh sách thành viên
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="liststyle" src="img/icon-liststyle.svg" alt="img">
+                                        <img class="liststyle-light" src="img/icon-liststyle-light.svg" alt="img">
+                                        Danh sách chi nhánh
+                                        HĐLK
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="liststyle" src="img/icon-liststyle.svg" alt="img">
+                                        <img class="liststyle-light" src="img/icon-liststyle-light.svg" alt="img">
+                                        Danh mục nhóm chi nhánh
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="liststyle" src="img/icon-liststyle.svg" alt="img">
+                                        <img class="liststyle-light" src="img/icon-liststyle-light.svg" alt="img">
+                                        Danh mục nghiệp vụ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="liststyle" src="img/icon-liststyle.svg" alt="img">
+                                        <img class="liststyle-light" src="img/icon-liststyle-light.svg" alt="img">
+                                        Danh sách chờ duyệt
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">
+                                <img class="icon-dark" src="img/icon-acount.svg" alt="img">
+                                <img class="icon-light" src="img/icon-acount-light.svg" alt="img">
+                                Tài khoản
+                                <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
+                                <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
+                            </a>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">
+                                <img class="icon-dark" src="img/icon-calenda.svg" alt="img">
+                                <img class="icon-light" src="img/icon-calenda-light.svg" alt="img">
+                                Lịch hoạt động
+                                <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
+                                <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
+                            </a>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">
+                                <img class="icon-dark" src="img/icon-juridical.svg" alt="img">
+                                <img class="icon-light" src="img/icon-juridical-light.svg" alt="img">
+                                Pháp lý
+                                <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
+                                <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
+                            </a>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">
+                                <img class="icon-dark" src="img/icon-manager-cate.svg" alt="img">
+                                <img class="icon-light" src="img/icon-manager-cate-light.svg" alt="img">
+                                Quản lý bài viết
+                                <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
+                                <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
+                            </a>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">
+                                <img class="icon-dark" src="img/icon-organization.svg" alt="img">
+                                <img class="icon-light" src="img/icon-organization-light.svg" alt="img">
+                                Tổ chức phát hành
+                                <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
+                                <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
+                            </a>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">
+                                <img class="icon-dark" src="img/icon-stock.svg" alt="img">
+                                <img class="icon-light" src="img/icon-stock-light.svg" alt="img">
+                                Chứng khoán phái sinh
+                                <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
+                                <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
+                            </a>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">
+                                <img class="icon-dark" src="img/icon-question.svg" alt="img">
+                                <img class="icon-light" src="img/icon-question-light.svg" alt="img">
+                                Hỏi đáp
+                                <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
+                                <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
+                            </a>
+                        </li>
+                        <li class="">
+                            <button class="btn-expand-narrow">
+                                <i class="fas fa-angle-left"></i>
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!--end head top-->
+
+        <div class="block-account">
+            <a href="#" class="name-user"><img src="img/icon-user.svg" alt="img"><span>Thaonp</span></a>
+            <a href="#"><img src="img/icon-noty.svg" alt="img"></a>
+        </div>
+    </header>
+
+    <!--end header-->
+
+    <main>
+        <div class="container">
+            <div class="title-page">
+                <h3 class="name-page">Danh Sách Thành Viên</h3>
+                <div class="breadcrumb-block">
+                    <a href="#">Trang chủ</a><span> / </span>
+                    <a href="#">Quản lý bài viết</a><span> / </span>
+                    <a href="#">Chỉnh sửa bài viết</a>
+                </div>
+            </div>
+
+
+            <form action="">
+                <div class="block-white">
+                    <div class="item-filed-edit">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label class="lbl-field">Tiều đề</label>
+                            </div>
+                            <div class="col-md-5">
+                                <input class="ip-edit" type="text" disabled>
+                            </div>
+                            <div class="col-md-5">
+                                <input class="ip-edit" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-filed-edit">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label class="lbl-field">Chứng khoán liên quan</label>
+                            </div>
+                            <div class="col-md-5">
+                                <input class="ip-edit" type="text" disabled>
+                            </div>
+                            <div class="col-md-5">
+                                <input class="ip-edit" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-filed-edit">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label class="lbl-field">Tóm tắt</label>
+                            </div>
+                            <div class="col-md-5">
+                                <textarea class="areaedit" cols="30" rows="10" disabled></textarea>
+                            </div>
+                            <div class="col-md-5">
+                                <textarea class="areaedit" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-filed-edit">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label class="lbl-field">Ảnh đại diện</label>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="box-ipfile">
+                                    <label for="file" class="sr-only">Select a file</label>
+                                    <input type="file" disabled>
+                                </div>
+                                <div class="box-upfile">
+                                    <button class="btn-upfile" disabled>Tải file lên</button>
+                                    <div class="txt-suggestion">(File ảnh đuôi .png, .jpg và có dung lượng < 2mb)</div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="box-ipfile canfuntion">
+                                    <label for="file" class="sr-only">Select a file</label>
+                                    <input type="file">
+                                </div>
+                                <div class="box-upfile canfuntion">
+                                    <button class="btn-upfile">Tải file lên</button>
+                                    <div class="txt-suggestion">(File ảnh đuôi .png, .jpg và có dung lượng < 2mb)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-filed-edit">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label class="lbl-field">Nội dung</label>
+                            </div>
+                            <div class="col-md-5">
+                                <textarea class="areaedit" cols="30" rows="10" disabled></textarea>
+
+                            </div>
+                            <div class="col-md-5">
+                                <textarea  class="areaedit" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-filed-edit">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label class="lbl-field">Chuyên mục</label>
+                            </div>
+                            <div class="col-md-5">
+                                <select class="sl-edit" disabled>
+                                    <option>Tin VSD</option>
+                                    <option>Tin VSD 1</option>
+                                    <option>Tin VSD 2</option>
+                                    <option>Tin VSD 3</option>
+                                </select>
+
+                                <select class="sl-edit" disabled>
+                                    <option>Tin nghiệp vụ với TVLK</option>
+                                    <option>Tin nghiệp vụ với TVLK1</option>
+                                    <option>Tin nghiệp vụ với TVLK2</option>
+                                    <option>Tin nghiệp vụ với TVLK3</option>
+                                </select>
+
+                            </div>
+                            <div class="col-md-5">
+                                <select class="sl-edit">
+                                    <option>Chuyên mục chính</option>
+                                    <option>Chuyên mục chính 1</option>
+                                    <option>Chuyên mục chính 2</option>
+                                    <option>Chuyên mục chính 3</option>
+
+                                </select>
+
+                                <select class="sl-edit">
+                                    <option>Chuyên mục liên quan</option>
+                                    <option>Chuyên mục liên quan 1</option>
+                                    <option>Chuyên mục liên quan 2</option>
+                                    <option>Chuyên mục liên quan 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-right text-right">
+                        <button class="btn-blue" type="button">Lưu</button>
+                        <button class="btn-blue-outline" type="button">Hủy bỏ</button>
+                    </div>
+
+
+                </div>
+            </form>
+
+
+        </div>
+    </main>
+</div>
+<a href="#" id="back-to-top"><i class="fas fa-angle-up"></i></a>
+
+<script type="text/javascript" src="libs/js/jquery.min.js"></script>
+<!--    <script type="text/javascript" src="libs/js/popper.min.js"></script>-->
+
+<script type="text/javascript" src="libs/js/bootstrap.min.js"></script>
+<!--    <script type="text/javascript" src="libs/js/mdb.min.js"></script>-->
+
+<script type="text/javascript" src="libs/js/jquery.datetimepicker.full.min.js"></script>
+<script type="text/javascript" src="libs/js/moment.min.js"></script>
+<script type="text/javascript" src="libs/js/script.js"></script>
+<!--    <script>-->
+<!--        $(document).ready(function() {-->
+<!--            $('.mdb-select').materialSelect();-->
+<!--        });-->
+<!--    </script>-->
+</body>
+</html>

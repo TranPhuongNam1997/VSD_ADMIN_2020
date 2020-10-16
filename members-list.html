@@ -218,7 +218,7 @@
                         <input class="text-null" type="text" placeholder="Tên thành viên hoặc tổ chức">
                         <button class="icon-close-ip"><img src="img/icon-close-ip.svg" alt="img"></button>
                     </div>
-                    <button class="btn-add"><img src="img/icon-add.svg" alt="img"></button>
+                    <button class="btn-add" data-toggle="modal" data-target="#popup-add"><img src="img/icon-add.svg" alt="img"></button>
                     <button class="btn-search"><img src="img/icon-search.svg" alt="img"></button>
                 </div>
                 <div class="tbl-data">
@@ -487,6 +487,212 @@
 
         </div>
     </main>
+</div>
+
+<!--modal-->
+<div class="modal md-vsd" id="popup-add">
+    <div class="md-dialog">
+        <div class="modal-content">
+            <div class="mdl-head">
+                <h3 class="title-popup">Thêm mới thành viên</h3>
+                <button type="button" data-dismiss="modal"><img src="img/icon-close-pp.svg" alt="img"></button>
+            </div>
+            <div class="mdl-body">
+                <div class="item-popup">
+                    <div class="title-popup">Tên thành viên</div>
+                    <div class="field-popup">
+                        <input type="text" class="ip-popup" placeholder="Nhập tên thành viên">
+                    </div>
+                </div>
+                <div class="item-popup">
+                    <div class="title-popup">Tên tiếng anh</div>
+                    <div class="field-popup">
+                        <input type="text" class="ip-popup" placeholder="Nhập tên tiếng anh">
+                    </div>
+                </div>
+                <div class="item-popup">
+                    <div class="title-popup">Tên viết tắt</div>
+                    <div class="field-popup">
+                        <input type="text" class="ip-popup" placeholder="Nhập tên viết tắt">
+                    </div>
+                </div>
+                <div class="item-popup">
+                    <div class="title-popup">Mã thành viên</div>
+                    <div class="field-popup">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <input type="text" class="ip-popup" placeholder="Nhập mã thành viên">
+                            </div>
+                            <div class="col-md-5 flex-center">
+                                <input type="checkbox">
+                                <label for="">Chọn thành viên sáp nhập</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-popup">
+                    <div class="title-popup">Tên viết tắt</div>
+                    <div class="field-popup">
+                        <div class="item-radio">
+                            <input type="radio" id="test1" name="radio-group" checked>
+                            <label for="test1">Tổ chức mở tài khoản trực tiếp</label>
+                        </div>
+                        <div class="item-radio">
+                            <input type="radio" id="test2" name="radio-group">
+                            <label for="test2">Thành viên lưu ký</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-popup">
+                    <div class="title-popup">Nghiệp vụ kinh doanh</div>
+                    <div class="field-popup">
+                        <div class="box-major">
+                            <div class="row">
+                                <div class="col-md-6 item-major flex-center">
+                                    <input type="checkbox">
+                                    <label for="">Môi giới</label>
+                                </div>
+                                <div class="col-md-6 item-major flex-center">
+                                    <input type="checkbox">
+                                    <label for="">Bảo lãnh phát hành</label>
+                                </div>
+                                <div class="col-md-6 item-major flex-center">
+                                    <input type="checkbox">
+                                    <label for="">Tự doanh</label>
+                                </div>
+                                <div class="col-md-6 item-major flex-center">
+                                    <input type="checkbox">
+                                    <label for="">Tư vấn đầu tư chứng khoán</label>
+                                </div>
+                                <div class="col-md-6 item-major flex-center">
+                                    <input type="checkbox">
+                                    <label for="">Lưu ký chứng khoán</label>
+                                </div>
+                                <div class="col-md-6 item-major flex-center">
+                                    <input type="checkbox">
+                                    <label for="">Quản lý danh mục đầu tư</label>
+                                </div>
+                                <div class="col-md-6 item-major flex-center">
+                                    <input type="checkbox">
+                                    <label for="">Test nghiệp vụ kinh doanh</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-popup">
+                    <div class="title-popup">Tên viết tắt</div>
+                    <div class="field-popup">
+                        <textarea id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="item-popup">
+                    <div class="title-popup">Số điện thoại</div>
+                    <div class="field-popup">
+                        <input type="text" class="ip-popup" placeholder="N/A">
+                    </div>
+                </div>
+                <div class="item-popup">
+                    <div class="title-popup">Số fax</div>
+                    <div class="field-popup">
+                        <input type="text" class="ip-popup" placeholder="N/A">
+                    </div>
+                </div>
+                <div class="item-popup">
+                    <div class="title-popup">Email</div>
+                    <div class="field-popup">
+                        <input type="text" class="ip-popup" placeholder="N/A">
+                    </div>
+                </div>
+                <div class="item-popup">
+                    <div class="title-popup">Website</div>
+                    <div class="field-popup">
+                        <input type="text" class="ip-popup" placeholder="N/A">
+                    </div>
+                </div>
+                <div class="item-popup">
+                    <div class="title-popup">Logo</div>
+                    <div class="field-popup">
+                        <div class="box-upload-add">
+                            <label for="file" class="sr-only">Select a file</label>
+                            <input type="file">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-popup">
+                    <div class="title-popup">Loại tiền tệ</div>
+                    <div class="field-popup">
+                        <select name="">
+                            <option value="">Loại tiền tệ 1</option>
+                            <option value="">Loại tiền tệ 2</option>
+                            <option value="">Loại tiền tệ 3</option>
+                            <option value="">Loại tiền tệ 4</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item-popup">
+                    <div class="title-popup">Ủy quyền 1</div>
+                    <div class="field-popup">
+                        <div class="item-popup">
+                            <div class="title-popup">Tên</div>
+                            <div class="field-popup">
+                                <input type="text" class="ip-popup" placeholder="N/A">
+                            </div>
+                        </div>
+                        <div class="item-popup">
+                            <div class="title-popup">Chức vụ</div>
+                            <div class="field-popup">
+                                <input type="text" class="ip-popup" placeholder="N/A">
+                            </div>
+                        </div>
+                        <div class="item-popup">
+                            <div class="title-popup">Quyền</div>
+                            <div class="field-popup">
+                                <div class="row">
+                                    <div class="col-md-12 item-major flex-center">
+                                        <input type="checkbox">
+                                        <label for="">Môi giới</label>
+                                    </div>
+                                    <div class="col-md-12 item-major flex-center">
+                                        <input type="checkbox">
+                                        <label for="">Bảo lãnh phát hành</label>
+                                    </div>
+                                    <div class="col-md-12 item-major flex-center">
+                                        <input type="checkbox">
+                                        <label for="">Tự doanh</label>
+                                    </div>
+                                    <div class="col-md-12 item-major flex-center">
+                                        <input type="checkbox">
+                                        <label for="">Tư vấn đầu tư chứng khoán</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-popup">
+                            <div class="title-popup">Chức vụ</div>
+                            <div class="field-popup">
+                                <input type="text" class="ip-popup" placeholder="N/A">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="mdl-foot">
+                <div class="btn-foot text-right">
+                    <button class="btn-blue" type="button">Lưu</button>
+                    <button class="btn-blue-outline" type="button">Hủy bỏ</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>
 <a href="#" id="back-to-top"><i class="fas fa-angle-up"></i></a>
 

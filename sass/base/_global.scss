@@ -42,6 +42,11 @@ input:focus,textarea:focus{
   cursor: pointer;
 }
 
+.flex-center{
+  display: flex;
+  align-items: center;
+}
+
 
 //css pagination
 #d_page{
