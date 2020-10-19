@@ -14,12 +14,30 @@
   .breadcrumb-block{
     a{
       color: #B6B6B6;
+      padding-right: 15px;
+      position: relative;
+      margin-right: 10px;
+      &:after{
+        content: '/';
+        right: 0;
+        position: absolute;
+      }
       &:last-child{
         color: #255888;
+        &:hover{
+          text-decoration: underline;
+        }
+        &:after{
+          display: none;
+        }
       }
+
     }
     span{
       color: #B6B6B6;
+      &:last-child{
+        display: none;
+      }
     }
   }
 
@@ -29,6 +47,11 @@ main{
   width: calc(100% - 220px);
   padding-bottom: 50px;
   float: right;
+  transition: all 0.3s;
+  &.active{
+    width: calc(100% - 55px);
+    transition: all 0.3s;
+  }
 }
 .block-data{
   background: #fff;
@@ -83,7 +106,7 @@ main{
   margin-right: 6px;
   width: 300px;
   margin-bottom: 12px;
-  select,input{
+  > select, > input{
     width: 100%;
     background: #FFFFFF;
     box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.15);
@@ -266,11 +289,17 @@ textarea[disabled],textarea[disabled="disabled"]{
   &.show{
     display: flex!important;
   }
+  &.popup-flex{
+    display: flex!important;
+  }
   .md-dialog{
     max-width: 1080px;
     width: 100%;
   }
-
+  .modal-content{
+    border-radius: 5px;
+    overflow: hidden;
+  }
   .mdl-head{
     display: flex;
     align-items: center;
@@ -284,12 +313,16 @@ textarea[disabled],textarea[disabled="disabled"]{
       margin-bottom: 0;
       font-size: 16px;
       line-height: 20px;
+      .clr-red{
+        color: red;
+      }
     }
     button{
       background: none;
       border: none;
       line-height: 0;
       margin-right: -6px;
+      outline: none;
     }
   }
   .mdl-body{
@@ -440,4 +473,10 @@ textarea[disabled],textarea[disabled="disabled"]{
       margin-bottom: 0;
     }
   }
+}
+
+
+.txt-approved {
+  color: #00940f;
+  text-align: center;
 }

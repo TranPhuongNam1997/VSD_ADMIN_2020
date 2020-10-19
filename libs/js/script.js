@@ -4,7 +4,7 @@ $( document ).ready(function() {
     //js menubar
     $(".menuchild").hide();
     $(".has-dropdown.active .menuchild").show();
-
+    $("header.active .has-dropdown.active .menuchild").hide();
     $(".has-dropdown").click(function(){
         $(".has-dropdown").removeClass('rotate-down');
 
@@ -16,15 +16,60 @@ $( document ).ready(function() {
         }
     });
 
+
+
+
+
+    //js tinh vi tri menu con
+    $('header.active .menu-parent > li').off('mouseover').on('mouseover', function () {
+        var _windowScroll = $(window).scrollTop();
+
+        // tinh vị trí của của menu-parent > li
+        var _offset = $(this).offset();
+        $('.menuchild', $(this)).css({"display":"block", "top": (_offset.top - _windowScroll) + "px", "left": _offset.left + "px" })
+    }).off('mouseout').on('mouseout', function () {
+        $('.menuchild', $(this)).css({ "top": "-1000px", "left": "-1000px","display":"none" })
+    });
+
+
+
     $('.icon-close-ip').click(function () {
-       $('.text-null').innerHTML = '';
+        $('.text-null').val("");
     });
 
-    $('.btn-expand-narrow').click(function () {
-       $('header').toggleClass('active');
+    // expand narrow header
+    $('.btn-narrow').click(function () {
+        $(this).toggleClass('active');
+        $('header').addClass('active');
+        $('main').addClass('active');
+
+
+
+        //js tinh vi tri menu con
+        $('header.active .menu-parent > li').off('mouseover').on('mouseover', function () {
+            var _windowScroll = $(window).scrollTop();
+
+            // tinh vị trí của của menu-parent > li
+            var _offset = $(this).offset();
+            $('.menuchild', $(this)).css({"display":"block", "top": (_offset.top - _windowScroll) + "px", "left": _offset.left + "px" })
+        }).off('mouseout').on('mouseout', function () {
+            $('.menuchild', $(this)).css({ "top": "-1000px", "left": "-1000px","display":"none" })
+        });
+        $(this).hide();
+        $('.btn-expand').show();
     });
-
-
+    $('.btn-expand').hide();
+    $('.btn-expand').click(function () {
+        $('header.active .menu-parent > li').off('mouseover').on('mouseover', function () {
+            return false;
+        }).off('mouseout').on('mouseout', function () {
+            return false;
+        });
+        $(this).hide();
+        $('.btn-narrow').show();
+        $('header').removeClass('active');
+        $('main').removeClass('active');
+    });
     //js input file
 
     $('input[type="file"]').each(function() {
@@ -62,6 +107,8 @@ $( document ).ready(function() {
 
 
 
+
+
     //nut scroll top
 
     $("#back-to-top").click(function () {
@@ -77,45 +124,30 @@ $( document ).ready(function() {
         }
     });
 
-    //script sidebar
+    // //script sidebar
+    //
+    // $(".menucate-lv2").hide();
+    // $(".rotate-down .menucate-lv2").show();
+    // $(".menucate-lv1 > li > a").click(function(){
+    //     $(".menucate-lv1 > li.hasdrop-cate").removeClass('rotate-down');
+    //
+    //     $(".menucate-lv2").slideUp();
+    //     if(!$(this).next(".menucate-lv2").is(":visible"))
+    //     {
+    //         $(this).next(".menucate-lv2").slideDown();
+    //         $(this).parent().addClass('rotate-down');
+    //     }
+    // });
+    //
+    // //js nut bars
+    // $('.bars-close').click(function () {
+    //     $('.width-resize').toggleClass('change-width');
+    //     $('.col-vsd-60').toggleClass('change-width');
+    // });
+    // $('.bars-close').hover(function () {
+    //     $('.heading-diary').toggleClass('change-color');
+    // });
 
-    $(".menucate-lv2").hide();
-    $(".rotate-down .menucate-lv2").show();
-    $(".menucate-lv1 > li > a").click(function(){
-        $(".menucate-lv1 > li.hasdrop-cate").removeClass('rotate-down');
-
-        $(".menucate-lv2").slideUp();
-        if(!$(this).next(".menucate-lv2").is(":visible"))
-        {
-            $(this).next(".menucate-lv2").slideDown();
-            $(this).parent().addClass('rotate-down');
-        }
-    });
-
-    //js nut bars
-    $('.bars-close').click(function () {
-        $('.width-resize').toggleClass('change-width');
-        $('.col-vsd-60').toggleClass('change-width');
-    });
-    $('.bars-close').hover(function () {
-        $('.heading-diary').toggleClass('change-color');
-    });
-
-
-    // js nut thay đổi trạng thái của từ popup
-    $('.item-word').click(function () {
-       $(this).toggleClass('active');
-    });
-
-    //check box
-
-    $('.btn-selectall input').click(function () {
-        $('.btn-selectchild input').prop('checked', this.checked);
-    });
-    $('.btn-selectchild input').change(function () {
-        var check = ($('.btn-selectchild input').filter(":checked").length == $('.btn-selectchild input').length);
-        $('.btn-selectall input').prop("checked", check);
-    });
 
 
 

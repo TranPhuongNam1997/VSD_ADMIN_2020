@@ -24,9 +24,11 @@ header{
   top: 0;
   height: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all 0.3s;
 
   /* width */
   &::-webkit-scrollbar {
@@ -52,6 +54,94 @@ header{
 
 
   &.active{
+    width: 55px;
+    transition: all 0.3s;
+
+    .navigation{
+      margin: 0 12px;
+      .menu-parent > li{
+        margin-bottom: 2px;
+        >a{
+          text-align: center;
+          padding: 8px 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          img{
+            width: 20px;
+            margin-right: 0;
+          }
+          >span{
+            visibility: hidden;
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+          .angle-dark,.angle-light{
+            display: none;
+          }
+          &:after{
+            display: none;
+          }
+        }
+      }
+
+    }
+    .menuchild{
+      position: fixed;
+      background: #61A3E0;
+      border-radius: 5px;
+      width: 197px;
+      z-index: 99;
+      padding: 4px 0;
+      transform: translate(19%, calc(0%));
+      display: none;
+      &:after{
+        content: '';
+        border-right: 5px solid #61A3E0;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        position: absolute;
+        left: -5px;
+        top: 10px;
+      }
+      >li{
+        >a{
+          padding: 6px 10px 6px 27px;
+          color: #B4D1F0;
+          .liststyle,.liststyle-light{
+            left: 12px;
+          }
+          &:hover{
+            color: #fff;
+          }
+        }
+      }
+    }
+    .txt-logo{
+      display: none;
+    }
+    .logo{
+      padding: 10px;
+      img{
+        margin-right: 0;
+      }
+    }
+    .block-account{
+      a{
+        display: none;
+        &.name-user{
+          display: block;
+          img{
+            margin-right: 0;
+          }
+          span{
+            display: none;
+          }
+        }
+      }
+    }
 
   }
 

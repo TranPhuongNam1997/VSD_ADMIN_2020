@@ -39,14 +39,14 @@
                             <a href="#">
                                 <img class="icon-dark" src="img/icon-home.svg" alt="img">
                                 <img class="icon-light" src="img/icon-home-light.svg" alt="img">
-                                Trang chủ
+                                <span>Trang chủ</span>
                             </a>
                         </li>
                         <li class="has-dropdown">
                             <a href="#">
                                 <img class="icon-dark" src="img/icon-uti.svg" alt="img">
                                 <img class="icon-light" src="img/icon-uti-light.svg" alt="img">
-                                Tiện ích
+                                <span>Tiện ích</span>
                                 <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
                                 <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
                             </a>
@@ -55,7 +55,7 @@
                             <a href="#">
                                 <img class="icon-dark" src="img/icon-member.svg" alt="img">
                                 <img class="icon-light" src="img/icon-member-light.svg" alt="img">
-                                Thành viên
+                                <span>Thành viên</span>
                                 <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
                                 <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
                             </a>
@@ -103,7 +103,7 @@
                             <a href="#">
                                 <img class="icon-dark" src="img/icon-acount.svg" alt="img">
                                 <img class="icon-light" src="img/icon-acount-light.svg" alt="img">
-                                Tài khoản
+                                <span>Tài khoản</span>
                                 <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
                                 <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
                             </a>
@@ -112,7 +112,7 @@
                             <a href="#">
                                 <img class="icon-dark" src="img/icon-calenda.svg" alt="img">
                                 <img class="icon-light" src="img/icon-calenda-light.svg" alt="img">
-                                Lịch hoạt động
+                                <span>Lịch hoạt động</span>
                                 <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
                                 <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
                             </a>
@@ -121,7 +121,7 @@
                             <a href="#">
                                 <img class="icon-dark" src="img/icon-juridical.svg" alt="img">
                                 <img class="icon-light" src="img/icon-juridical-light.svg" alt="img">
-                                Pháp lý
+                                <span>Pháp lý</span>
                                 <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
                                 <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
                             </a>
@@ -130,7 +130,7 @@
                             <a href="#">
                                 <img class="icon-dark" src="img/icon-manager-cate.svg" alt="img">
                                 <img class="icon-light" src="img/icon-manager-cate-light.svg" alt="img">
-                                Quản lý bài viết
+                                <span>Quản lý bài viết</span>
                                 <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
                                 <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
                             </a>
@@ -139,7 +139,7 @@
                             <a href="#">
                                 <img class="icon-dark" src="img/icon-organization.svg" alt="img">
                                 <img class="icon-light" src="img/icon-organization-light.svg" alt="img">
-                                Tổ chức phát hành
+                                <span>Tổ chức phát hành</span>
                                 <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
                                 <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
                             </a>
@@ -148,7 +148,7 @@
                             <a href="#">
                                 <img class="icon-dark" src="img/icon-stock.svg" alt="img">
                                 <img class="icon-light" src="img/icon-stock-light.svg" alt="img">
-                                Chứng khoán phái sinh
+                                <span>Chứng khoán phái sinh</span>
                                 <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
                                 <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
                             </a>
@@ -157,14 +157,17 @@
                             <a href="#">
                                 <img class="icon-dark" src="img/icon-question.svg" alt="img">
                                 <img class="icon-light" src="img/icon-question-light.svg" alt="img">
-                                Hỏi đáp
+                                <span>Hỏi đáp</span>
                                 <img class="angle-dark" src="img/icon-angledown.svg" alt="img">
                                 <img class="angle-light" src="img/icon-angledown-light.svg" alt="img">
                             </a>
                         </li>
                         <li class="">
-                            <button class="btn-expand-narrow">
+                            <button class="btn-narrow">
                                 <i class="fas fa-angle-left"></i>
+                            </button>
+
+                            <button class="btn-expand">
                                 <i class="fas fa-angle-right"></i>
                             </button>
                         </li>
@@ -348,5 +351,18 @@
 <!--            $('.mdb-select').materialSelect();-->
 <!--        });-->
 <!--    </script>-->
+
+<!--<script>-->
+<!--    $('.menu-parent > li').off('mouseover').on('mouseover', function () {-->
+
+<!--        var _windowScroll = $(window).scrollTop();-->
+
+<!--        // tinh vị trí của của menu-parent > li-->
+<!--        var _offset = $(this).offset();-->
+<!--        $('.menuchild', $(this)).css({"display":"block", "top": (_offset.top - _windowScroll) + "px", "left": _offset.left + "px" })-->
+<!--    }).off('mouseout').on('mouseout', function () {-->
+<!--        $('.menuchild', $(this)).css({ "top": "-1000px", "left": "-1000px","display":"none" })-->
+<!--    });-->
+<!--</script>-->
 </body>
 </html>
